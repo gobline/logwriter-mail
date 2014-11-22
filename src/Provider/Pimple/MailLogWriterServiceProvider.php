@@ -29,23 +29,23 @@ class MailLogWriterServiceProvider implements ServiceProviderInterface
     public function register(Container $container)
     {
         $container[$this->reference] = function ($c) {
-            if (empty($c[$reference.'.mailer'])) {
+            if (empty($c[$this->reference.'.mailer'])) {
                 throw new \Exception('mailer not specified');
             }
-            if (empty($c[$c[$reference.'.mailer']])) {
+            if (empty($c[$c[$this->reference.'.mailer']])) {
                 throw new \Exception('mailer not found');
             }
-            if (empty($c[$reference.'.from'])) {
+            if (empty($c[$this->reference.'.from'])) {
                 throw new \Exception('sender not specified');
             }
-            if (empty($c[$reference.'.to'])) {
+            if (empty($c[$this->reference.'.to'])) {
                 throw new \Exception('recipient(s) not specified');
             }
 
             return new SwiftMailer(
-                $c[$c[$reference.'.mailer']],
-                $c[$reference.'.from'],
-                $c[$reference.'.to']
+                $c[$c[$this->reference.'.mailer']],
+                $c[$this->reference.'.from'],
+                $c[$this->reference.'.to']
             );
         };
     }

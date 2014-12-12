@@ -1,0 +1,11 @@
+<?php
+
+return [
+    'host' => 'smtp.gmail.com',
+    'port' => 465,
+    'user' => 'user@gmail.com',
+    'password' => 'password',
+    'security' => 'ssl',
+    'sender' => 'user@gmail.com',
+    'recipient' => 'user@gmail.com',
+];

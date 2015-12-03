@@ -12,8 +12,8 @@
 namespace Gobline\Logger\Writer;
 
 use Psr\Log\AbstractLogger;
-use \Swift_Mailer;
-use \Swift_Message;
+use Swift_Mailer;
+use Swift_Message;
 
 /**
  * Writes log information out as mail messages.

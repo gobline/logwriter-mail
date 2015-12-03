@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Mendo Framework
+ * Gobline
  *
  * (c) Mathieu Decaffmeyer <mdecaffmeyer@gmail.com>
  *
@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-use Mendo\Logger\Writer\MailLogWriter;
+use Gobline\Logger\Writer\MailLogWriter;
 use \Swift_Mailer;
 
 /**

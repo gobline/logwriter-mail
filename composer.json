@@ -1,6 +1,6 @@
 {
     "name": "gobline/logwriter-mail",
-    "description": "Gobline Mail Log Writer Component",
+    "description": "Mail Log Writer component",
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -21,7 +21,7 @@
     "require": {
         "php": ">=5.6.0",
         "psr/log": "1.0.*@dev",
-        "gobline/logger": "~1.0",
+        "gobline/logger": "~2.0",
         "swiftmailer/swiftmailer": "5.3.*@dev"
     },
     "require-dev": {
@@ -31,7 +31,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0.x-dev"
+            "dev-master": "2.0.x-dev"
         }
     }
 }
